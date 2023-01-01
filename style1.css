@@ -1,0 +1,254 @@
+
+    /* css reset */
+    .header {
+        /* font-family: 'Roboto', sans-serif; */
+        font-family: 'Righteous', cursive;
+        margin: 0px;
+        padding: 0px;
+        height: 900px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(./veltech.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+
+    }
+
+    .header {
+        color: white;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid white; */
+        position: absoute;
+        left: 24px;
+        top: 10px;
+
+    }
+
+    .mid {
+        display: block;
+        margin: 20px 70px;
+        /*to bring the box in centre*/
+        /* border: 2px solid white; */
+        text-align: right;
+        /* left: 150px; */
+        width: 100%;
+        /* left: 200px; */
+        
+
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+    .navbar li {
+        display: inline-block;
+        font-size: 17px;
+        
+
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 80px 70px;
+      
+    }
+   
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: rgb(27 161 165);
+        text-decoration: underline;
+    }
+
+
+
+    .left img {
+        width: 100px;
+        height: 100px;
+        padding:0px 0px ;
+        /* margin:0px 0px; */
+        border-radius:703px;
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Righteous', cursive;
+    }
+
+    /* .btn {
+        margin: auto;
+        background-color: black;
+        color: white;
+        padding: 0px 20px;
+        border: 2px solid white;
+        border-radius: 8px;
+        cursor: pointer;
+        font-family: 'Righteous', cursive;
+    }
+
+    .btn:hover {
+
+        background-color: rgb(233, 229, 225);
+        color: black;
+    } */
+
+
+.textbox{
+    width: 100%;
+    position:absolute;
+    top: 30%;
+    /* left: 50%; */
+    transform: translate3d(-50%,-50%);
+    text-align: center;
+}
+
+.textbox h1{
+    font-size: 62px;
+}
+.textbox p{
+    margin: 10px 30px 20px;
+    font-size: 14px;
+
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration:none;
+    position: relative;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 34px ;
+    background: transparent;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.hero-btn:hover{
+    background-color: rgb(196, 27, 27);
+    transition: 1s;
+}
+
+/* @media(max-width:900px){
+    .textbox h1{
+        font-size: 62px;
+   
+    }
+    .mid.navbar li {
+        display: block;
+        padding: 30px 0px;
+    }
+    .navbar{
+        position:absolute;
+        background:red;
+        height: 100vh;
+        width: 200px;
+        top:0;
+        right:0;
+        text-align:left;
+        justify-content: left;
+        z-index:2;
+    } */
+.department{
+    width:80%;
+    /* height: 100%; */
+    margin:auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600; 
+}
+.department p{
+    color:black;
+    font-size:14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    /* display: flex; */
+    justify-content:space-between;
+}
+.dept-col{
+    flex-basis:31%;
+    background:rgb(47, 230, 178);
+    border-radius: 10px;
+    margin-bottom:5%;
+    padding: 20px 0px;
+    box-sizing: border-box;
+    position:relative;
+  
+   
+    
+}
+.dept-col .course h3{
+     top:0%;
+     /* left:40%; */
+    text-align: center;
+    color: black;
+    
+   
+}
+.dept-col:hover{
+    box-shadow:0 0 6px rgba(0, 0, 0, 4) ;
+}
+
+.campus{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px; 
+   
+ } 
+.campus-col{
+   max-width:25%;
+   max-height:500px;
+    /* flex-basis:32%; */
+    border-radius: 60px;
+    /* margin-bottom:30px;  */
+    position:relative; 
+    overflow:hidden;
+    display:inline-block;
+    margin:50px 50px 0px 50px;
+    
+    
+}
+.campus-col img{
+    display: block;
+}
+
+
+.layer{
+    
+    background: transparent;
+    height: 100%;
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    transition:0.5s;
+
+}  
+h3{
+    text-align: center;
+    color:white;
+    bottom: 0;
+    position: absolute;
+    left:40%;
+    transition:0.5s;
+}
+.layer:hover{
+    background:rgba(0, 0, 0, 0.916);
+    opacity: 50%;
+
+}
+.layer:hover h3{
+    bottom:49%;
+    opacity: 1;
+}
