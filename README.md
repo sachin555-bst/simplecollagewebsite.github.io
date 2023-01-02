@@ -1,1 +1,0 @@
-# simplecollagewebsite.github.io
